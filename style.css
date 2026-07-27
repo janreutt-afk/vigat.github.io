@@ -187,7 +187,9 @@ button {
   font-size: 16px;
   font-weight: 540;
   text-decoration: none;
-  transition: color 180ms ease, background-color 180ms ease;
+  transition: color 180ms ease, background-color 180ms ease, box-shadow 180ms ease, transform 120ms ease;
+  border-radius: 8px;
+  margin: 4px 8px;
 }
 
 .nav-link::before {
@@ -208,17 +210,27 @@ button {
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
+  transition: transform 180ms ease;
 }
 
 .nav-link:hover,
 .nav-link:focus-visible,
 .nav-link.is-active {
   color: #fff;
-  background: rgba(255, 255, 255, 0.055);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+  transform: translateX(4px);
+}
+
+.nav-link:hover svg,
+.nav-link:focus-visible svg {
+  transform: scale(1.1);
 }
 
 .nav-link.is-active {
   color: var(--blue);
+  background: rgba(0, 102, 204, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 102, 204, 0.3);
 }
 
 .nav-link.is-active::before {
