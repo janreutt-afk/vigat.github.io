@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="VIGAT – profesionalus vaizdo, garso ir elektronikos įrangos remontas bei diagnostika. Daugiau nei 30 metų patirties."
+    />
+    <meta name="theme-color" content="#071923" />
+    <title>VIGAT | Vaizdo ir garso aparatūros taisykla</title>
+    <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css?v=4" />
+    <script>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Pereiti prie turinio</a>
+
+    <!-- Vietiniai SVG simboliai. Svetainė nenaudoja išorinių ikonų bibliotekų. -->
+    <svg class="icon-library" aria-hidden="true">
+      <symbol id="icon-home" viewBox="0 0 24 24">
+        <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z" />
+      </symbol>
+      <symbol id="icon-person" viewBox="0 0 24 24">
+        <circle cx="12" cy="7" r="4" />
+        <path d="M4.5 21v-2.5a7.5 7.5 0 0 1 15 0V21h-15Z" />
+      </symbol>
+      <symbol id="icon-tools" viewBox="0 0 24 24">
+        <path d="M14.5 6.5a5 5 0 0 0-6-5.2l2.8 2.8-3 3-2.8-2.8a5 5 0 0 0 5.2 6L19 18.6a1.7 1.7 0 1 0 2.4-2.4l-6.9-6.9" />
+        <path d="m3 21 7.2-7.2M5.1 15.9l3 3" />
+      </symbol>
+      <symbol id="icon-chip" viewBox="0 0 24 24">
+        <rect x="6" y="6" width="12" height="12" rx="1" />
+        <rect x="9" y="9" width="6" height="6" rx="1" />
+        <path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="m3 6 9 7 9-7" />
+      </symbol>
+      <symbol id="icon-tv" viewBox="0 0 24 24">
+        <rect x="2" y="3" width="20" height="14" rx="1.5" />
+        <path d="M8 21h8m-4-4v4" />
+      </symbol>
+      <symbol id="icon-radio" viewBox="0 0 24 24">
+        <path d="m5 5 13-3M4 7h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" />
+        <circle cx="16" cy="14" r="3" />
+        <path d="M5 11h5m-5 4h4m-4 3h4" />
+      </symbol>
+      <symbol id="icon-speaker" viewBox="0 0 24 24">
+        <rect x="5" y="2" width="14" height="20" rx="2" />
+        <circle cx="12" cy="7" r="2" />
+        <circle cx="12" cy="15" r="4" />
+      </symbol>
+      <symbol id="icon-bottle" viewBox="0 0 24 24">
+        <path d="M9 2h6m-5 3h4l.7 3.2A5 5 0 0 1 18 13v8a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a5 5 0 0 1 3.3-4.8L10 5Z" />
+        <path d="M8 14h8m-8 4h8" />
+      </symbol>
+      <symbol id="icon-circuit" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <circle cx="8" cy="8" r="1" /><circle cx="16" cy="7" r="1" /><circle cx="17" cy="16" r="1" /><circle cx="7" cy="17" r="1" />
+        <path d="M8 9v3h8v3m0-7h-3v4M8 16h3v-4" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="m8 12 2.5 2.5L16.5 8" />
+      </symbol>
+      <symbol id="icon-microscope" viewBox="0 0 24 24">
+        <path d="m10 3 4 2-5 9-4-2 5-9Zm2 10a6 6 0 0 1 5 6M4 21h16M8 16H5a2 2 0 0 0-2 2v3" />
+        <circle cx="15" cy="9" r="2" />
+      </symbol>
+      <symbol id="icon-memory" viewBox="0 0 24 24">
+        <rect x="4" y="6" width="16" height="12" rx="2" />
+        <path d="M8 10h8v4H8zM7 3v3m5-3v3m5-3v3M7 18v3m5-3v3m5-3v3" />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-2-13-4 16" />
+      </symbol>
+      <symbol id="icon-solder" viewBox="0 0 24 24">
+        <path d="m4 20 8-8m-5-1 6 6m-4-8 6 6m-2-8 4-4 4 4-4 4" />
+        <path d="M2 22h8" />
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="10" cy="10" r="6" />
+        <path d="m14.5 14.5 6 6M7 10h6m-3-3v6" />
+      </symbol>
+      <symbol id="icon-meter" viewBox="0 0 24 24">
+        <rect x="4" y="2" width="16" height="20" rx="2" />
+        <circle cx="12" cy="9" r="4" />
+        <path d="m12 9 2-2m-5 10h6m-3-2v4" />
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M8 3 5 4.5c-1.5.8-1.8 2.5-1.2 4.3 2 5.8 5.6 9.4 11.4 11.4 1.8.6 3.5.3 4.3-1.2l1.5-3-5-2-1.6 2.3c-3-1.3-5.4-3.7-6.7-6.7L10 8 8 3Z" />
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7v5l3 2" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-5-5 5 5-5 5" />
+      </symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15" />
+      </symbol>
+    </svg>
+
+    <header class="mobile-header">
+      <a class="brand brand--mobile" href="#pagrindinis" aria-label="VIGAT – į pradžią">
+        <span>VIGAT</span>
+        <img src="assets/logo-mark.svg" alt="" width="38" height="38" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">
+        <span class="menu-toggle__label">Meniu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+    </header>
+
+    <div class="sidebar-overlay" data-menu-close></div>
+    <aside class="sidebar" id="sidebar" aria-label="Pagrindinė navigacija">
+      <a class="brand" href="#pagrindinis" aria-label="VIGAT – į pradžią">
+        <span>VIGAT</span>
+        <img src="assets/logo-mark.svg" alt="" width="48" height="48" />
+      </a>
+
+      <nav class="nav-list">
+        <a class="nav-link is-active" href="#pagrindinis" data-section-link aria-current="page">
+          <svg><use href="#icon-home"></use></svg><span>Pagrindinis</span>
+        </a>
+        <a class="nav-link" href="#apie" data-section-link>
+          <svg><use href="#icon-person"></use></svg><span>Apie mus</span>
+        </a>
+        <a class="nav-link" href="#paslaugos" data-section-link>
+          <svg><use href="#icon-tools"></use></svg><span>Paslaugos</span>
+        </a>
+        <a class="nav-link" href="#iranga" data-section-link>
+          <svg><use href="#icon-chip"></use></svg><span>Įranga</span>
+        </a>
+        <a class="nav-link" href="#kontaktai" data-section-link>
+          <svg><use href="#icon-mail"></use></svg><span>Kontaktai</span>
+        </a>
+      </nav>
+
+      <div class="experience-seal" aria-label="Daugiau nei 30 metų patirties">
+        <span class="experience-seal__eyebrow">Daugiau nei</span>
+        <strong>30</strong>
+        <span>metų patirties</span>
+      </div>
+      <p class="sidebar__note">Patirtis. Tikslumas. Atsakomybė.</p>
+    </aside>
+
+    <main id="main-content">
+      <section class="hero section-shell" id="pagrindinis" data-section>
+        <div class="hero__content">
+          <p class="eyebrow"><span></span> Elektronikos remonto meistrai</p>
+          <h1>VIGAT</h1>
+          <p class="hero__subtitle">Vaizdo ir garso aparatūros taisykla</p>
+          <p class="hero__accent">Daugiau nei 30 metų patirties</p>
+          <div class="short-rule"></div>
+          <p class="hero__text">
+            Profesionalus vaizdo, garso ir elektronikos įrangos remontas bei diagnostika.
+            Ilgametė patirtis, tikslumas ir atsakingas požiūris į kiekvieną remontą.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#paslaugos">
+              Mūsų paslaugos <svg><use href="#icon-arrow"></use></svg>
+            </a>
+            <a class="text-link" href="#kontaktai">Susisiekti</a>
+          </div>
+          <div class="hero__proof" aria-label="Pagrindiniai privalumai">
+            <span><svg><use href="#icon-check"></use></svg> Tiksli diagnostika</span>
+            <span><svg><use href="#icon-check"></use></svg> Profesionalūs įrankiai</span>
+          </div>
+        </div>
+
+        <figure class="hero__visual">
+          <img
+            src="assets/workbench-illustration.svg"
+            alt="Iliustracinė elektronikos taisyklos darbo vieta su televizoriumi, elektronikos plokšte, osciloskopu, litavimo stotele ir įrankiais"
+          />
+          <figcaption><span aria-hidden="true"></span> Iliustracinė remonto darbo vieta</figcaption>
+        </figure>
+      </section>
+
+      <section class="about section-shell" id="apie" data-section>
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> Patirtis, kuria galima pasikliauti</p>
+          <h2>Apie mus</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__story">
+            <p class="lead">
+              VIGAT – daugiau nei 30 metų veikianti vaizdo, garso ir elektronikos aparatūros taisykla.
+            </p>
+            <p>
+              Ilgametė praktinė patirtis leidžia diagnozuoti tiek įprastus, tiek sudėtingesnius
+              elektronikos gedimus. Darbai atliekami kruopščiai, naudojant profesionalią
+              diagnostikos ir remonto įrangą.
+            </p>
+            <div class="about__principle">
+              <svg><use href="#icon-tools"></use></svg>
+              <p><strong>Pirmiausia – aiškus įvertinimas.</strong> Įvertiname gedimą ir remonto tikslingumą prieš atliekant darbus.</p>
+            </div>
+          </div>
+
+          <div class="values-grid">
+            <article class="value-card value-card--accent">
+              <span class="value-card__number">30+</span>
+              <h3>Metų patirties</h3>
+              <p>Praktinės žinios, sukauptos remontuojant skirtingų kartų techniką.</p>
+            </article>
+            <article class="value-card">
+              <svg><use href="#icon-check"></use></svg>
+              <h3>Kruopštus darbas</h3>
+              <p>Dėmesys detalėms ir atsakingas požiūris į kiekvieną įrenginį.</p>
+            </article>
+            <article class="value-card">
+              <svg><use href="#icon-search"></use></svg>
+              <h3>Sąžiningas įvertinimas</h3>
+              <p>Aiškiai įvertiname gedimą ir ekonominį remonto tikslingumą.</p>
+            </article>
+            <article class="value-card">
+              <svg><use href="#icon-meter"></use></svg>
+              <h3>Profesionali įranga</h3>
+              <p>Diagnostikai ir remontui naudojami specializuoti prietaisai.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-shell" id="paslaugos" data-section>
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow"><span></span> Ką remontuojame</p>
+            <h2>Paslaugos</h2>
+          </div>
+          <p>Atliekame įvairios vaizdo, garso ir elektronikos įrangos gedimų paiešką, diagnostiką ir remontą.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="card-icon"><svg><use href="#icon-tv"></use></svg></div>
+            <span class="card-index">01</span>
+            <h3>Televizorių remontas</h3>
+            <p>Vaizdo, maitinimo, apšvietimo ir valdymo elektronikos gedimų diagnostika.</p>
+          </article>
+          <article class="service-card">
+            <div class="card-icon"><svg><use href="#icon-radio"></use></svg></div>
+            <span class="card-index">02</span>
+            <h3>Radijo aparatų remontas</h3>
+            <p>Imtuvų, grotuvų ir kitos radijo aparatūros gedimų nustatymas bei remontas.</p>
+          </article>
+          <article class="service-card">
+            <div class="card-icon"><svg><use href="#icon-speaker"></use></svg></div>
+            <span class="card-index">03</span>
+            <h3>Kolonėlių ir garso technikos remontas</h3>
+            <p>Garso kolonėlių, stiprintuvų ir kitos garso įrangos elektronikos remontas.</p>
+          </article>
+          <article class="service-card">
+            <div class="card-icon"><svg><use href="#icon-bottle"></use></svg></div>
+            <span class="card-index">04</span>
+            <h3>Vaikų mišinukų aparatų remontas</h3>
+            <p>Elektroninių mišinukų ruošimo aparatų diagnostika ir techninių gedimų šalinimas.</p>
+          </article>
+          <article class="service-card">
+            <div class="card-icon"><svg><use href="#icon-chip"></use></svg></div>
+            <span class="card-index">05</span>
+            <h3>Mikroschemų remontas</h3>
+            <p>Darbas su elektroninėmis plokštėmis, mikroschemomis ir smulkiais komponentais.</p>
+          </article>
+          <article class="service-card">
+            <div class="card-icon"><svg><use href="#icon-circuit"></use></svg></div>
+            <span class="card-index">06</span>
+            <h3>Kitos elektronikos remontas</h3>
+            <p>Įvairios buitinės ir specializuotos elektronikos gedimų paieška bei įvertinimas.</p>
+          </article>
+        </div>
+
+        <div class="service-note">
+          <svg><use href="#icon-search"></use></svg>
+          <p><strong>Neradote savo įrenginio?</strong> Susisiekite – įvertinsime, ar galime padėti.</p>
+          <a href="#kontaktai">Klausti meistro <svg><use href="#icon-arrow"></use></svg></a>
+        </div>
+      </section>
+
+      <section class="equipment" id="iranga" data-section>
+        <div class="section-shell">
+          <div class="equipment__intro">
+            <div class="section-heading section-heading--dark">
+              <p class="eyebrow"><span></span> Tikslumas prasideda nuo diagnostikos</p>
+              <h2>Profesionali diagnostikos ir remonto įranga</h2>
+            </div>
+            <p class="equipment__lead">
+              Sudėtingi elektronikos gedimai diagnozuojami ir remontuojami naudojant
+              profesionalią įrangą. Atliekamas darbas su elektroninėmis plokštėmis,
+              mikroschemomis, programine atmintimi ir smulkiais komponentais.
+            </p>
+            <div class="equipment__statement">
+              <span>Ne tik įprastas remontas</span>
+              <strong>Komponentų lygmens diagnostika</strong>
+            </div>
+          </div>
+
+          <div class="equipment-grid">
+            <article class="equipment-card">
+              <span class="equipment-card__line"></span>
+              <svg><use href="#icon-microscope"></use></svg>
+              <h3>Elektronikos mikroskopas</h3>
+              <p>Tiksliam smulkių komponentų ir litavimo vietų patikrinimui.</p>
+            </article>
+            <article class="equipment-card">
+              <span class="equipment-card__line"></span>
+              <svg><use href="#icon-memory"></use></svg>
+              <h3>Mikroschemų programavimo adapteriai</h3>
+              <p>Skirtingų korpusų mikroschemų nuskaitymui ir programavimui.</p>
+            </article>
+            <article class="equipment-card">
+              <span class="equipment-card__line"></span>
+              <svg><use href="#icon-code"></use></svg>
+              <h3>EEPROM ir FLASH atminties programavimas</h3>
+              <p>Programinės atminties duomenų nuskaitymui, įrašymui ir atkūrimui.</p>
+            </article>
+            <article class="equipment-card">
+              <span class="equipment-card__line"></span>
+              <svg><use href="#icon-solder"></use></svg>
+              <h3>Litavimo ir karšto oro stotelės</h3>
+              <p>Kontroliuojamam komponentų keitimui ir tiksliam litavimui.</p>
+            </article>
+            <article class="equipment-card">
+              <span class="equipment-card__line"></span>
+              <svg><use href="#icon-circuit"></use></svg>
+              <h3>Elektroninių plokščių diagnostika</h3>
+              <p>Maitinimo grandinių, signalų ir atskirų mazgų gedimų paieškai.</p>
+            </article>
+            <article class="equipment-card">
+              <span class="equipment-card__line"></span>
+              <svg><use href="#icon-meter"></use></svg>
+              <h3>Matavimo ir testavimo įranga</h3>
+              <p>Elektrinių parametrų, signalų ir komponentų būklei patikrinti.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="kontaktai" data-section>
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow"><span></span> Susisiekime</p>
+            <h2>Kontaktai</h2>
+          </div>
+          <p>Prieš atvykdami trumpai apibūdinkite įrenginį ir gedimą – galėsime tiksliau patarti.</p>
+        </div>
+
+        <!-- KONTAKTŲ REDAGAVIMAS: pakeiskite keturias reikšmes žemiau ir tel: nuorodą. -->
+        <div class="contact__layout">
+          <div class="contact__details">
+            <div class="contact-list">
+              <article class="contact-item">
+                <div class="contact-item__icon"><svg><use href="#icon-phone"></use></svg></div>
+                <div><span>Telefono numeris</span><strong>+370 600 00000</strong></div>
+              </article>
+              <article class="contact-item">
+                <div class="contact-item__icon"><svg><use href="#icon-pin"></use></svg></div>
+                <div><span>Adresas</span><strong>Adresas bus patikslintas</strong></div>
+              </article>
+              <article class="contact-item">
+                <div class="contact-item__icon"><svg><use href="#icon-clock"></use></svg></div>
+                <div><span>Darbo laikas</span><strong>I–V 9:00–18:00</strong></div>
+              </article>
+              <article class="contact-item">
+                <div class="contact-item__icon"><svg><use href="#icon-mail"></use></svg></div>
+                <div><span>El. paštas</span><strong>info@vigat.lt</strong></div>
+              </article>
+            </div>
+
+            <div class="contact__actions">
+              <a class="button button--primary" href="tel:+37060000000">
+                <svg><use href="#icon-phone"></use></svg> Skambinti
+              </a>
+              <a class="button button--outline" href="#map-placeholder" data-map-link>
+                <svg><use href="#icon-map"></use></svg> Rodyti žemėlapyje
+              </a>
+            </div>
+            <p class="contact__edit-note">Kontaktiniai duomenys yra laikini ir paruošti lengvam pakeitimui.</p>
+          </div>
+
+          <div class="map-placeholder" id="map-placeholder" tabindex="-1" aria-label="Vieta būsimam Google žemėlapiui">
+            <div class="map-placeholder__roads" aria-hidden="true"></div>
+            <div class="map-placeholder__pin">
+              <svg><use href="#icon-pin"></use></svg>
+            </div>
+            <div class="map-placeholder__label">
+              <span>Žemėlapio vieta</span>
+              <strong>Google žemėlapis bus įkeltas nurodžius adresą</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer__brand">
+          <span>VIGAT</span>
+          <p>Vaizdo, garso ir elektronikos aparatūros taisykla</p>
+        </div>
+        <p>© <span data-current-year></span> VIGAT. Visos teisės saugomos.</p>
+        <a href="#pagrindinis">Grįžti į viršų ↑</a>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

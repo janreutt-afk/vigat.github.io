@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" role="img" aria-labelledby="title desc">
+  <title id="title">Elektronikos remonto darbo vieta</title>
+  <desc id="desc">Televizorius, osciloskopas, elektronikos plokštė, litavimo stotelė, matavimo laidai ir įrankiai ant profesionalaus darbastalio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfe4e5"/>
+      <stop offset=".55" stop-color="#aab2b2"/>
+      <stop offset="1" stop-color="#768184"/>
+    </linearGradient>
+    <linearGradient id="bench" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#343b3e"/>
+      <stop offset="1" stop-color="#11191d"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2833"/>
+      <stop offset="1" stop-color="#02080b"/>
+    </linearGradient>
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#136b53"/>
+      <stop offset="1" stop-color="#073b34"/>
+    </linearGradient>
+    <pattern id="pegboard" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="2.6" fill="#6f797a" opacity=".6"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#041018" flood-opacity=".36"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="800" fill="url(#bg)"/>
+  <rect width="1100" height="430" fill="url(#pegboard)" opacity=".65"/>
+  <rect y="540" width="1100" height="260" fill="url(#bench)"/>
+  <path d="M0 540h1100" stroke="#f47721" stroke-width="4" opacity=".75"/>
+
+  <!-- wall tools -->
+  <g transform="translate(845 70)" filter="url(#shadow)">
+    <rect x="0" y="0" width="170" height="270" rx="10" fill="#11191d"/>
+    <rect x="14" y="14" width="142" height="175" rx="4" fill="url(#screen)"/>
+    <path d="M25 115c32-53 42 47 70-12s37 17 50-35" fill="none" stroke="#47cfb2" stroke-width="4" opacity=".7"/>
+    <circle cx="37" cy="226" r="10" fill="#555f62"/>
+    <circle cx="69" cy="226" r="10" fill="#555f62"/>
+    <circle cx="101" cy="226" r="10" fill="#f47721"/>
+    <path d="M130 218h18m-18 12h18" stroke="#798487" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(70 34)">
+    <rect width="450" height="268" rx="15" fill="#0d1519" filter="url(#shadow)"/>
+    <rect x="19" y="19" width="412" height="223" rx="8" fill="url(#screen)"/>
+    <path d="M75 231h300" stroke="#243b45" stroke-width="3"/>
+    <path d="M165 268h160l35 52H130z" fill="#1b2428"/>
+    <rect x="110" y="314" width="230" height="18" rx="9" fill="#121a1e"/>
+    <g opacity=".55">
+      <path d="M44 194h88l35-70 48 41 44-98 45 74h103" fill="none" stroke="#31b69c" stroke-width="3"/>
+      <path d="M44 205h363" stroke="#21424a" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- oscilloscope -->
+  <g transform="translate(540 115)" filter="url(#shadow)">
+    <path d="M15 0h270a15 15 0 0 1 15 15v205H0V15A15 15 0 0 1 15 0Z" fill="#e8eceb"/>
+    <rect x="22" y="30" width="165" height="112" rx="5" fill="#10242d"/>
+    <g stroke="#29444b" stroke-width="1" opacity=".75">
+      <path d="M22 58h165M22 86h165M22 114h165M55 30v112M88 30v112m33-112v112m33-112v112"/>
+    </g>
+    <path d="M28 97c26-7 23-49 47-40s29 62 51 45 29-50 55-33" fill="none" stroke="#f0b43c" stroke-width="4"/>
+    <g fill="#708083">
+      <circle cx="221" cy="46" r="12"/><circle cx="262" cy="46" r="12"/>
+      <circle cx="221" cy="89" r="12"/><circle cx="262" cy="89" r="12"/>
+      <circle cx="221" cy="132" r="12"/><circle cx="262" cy="132" r="12"/>
+    </g>
+    <g fill="#f47721"><circle cx="217" cy="188" r="6"/><circle cx="244" cy="188" r="6"/></g>
+    <rect x="0" y="220" width="300" height="24" fill="#343d40"/>
+  </g>
+
+  <!-- soldering station -->
+  <g transform="translate(758 390)" filter="url(#shadow)">
+    <rect x="0" y="40" width="220" height="175" rx="18" fill="#20292d"/>
+    <rect x="25" y="67" width="112" height="55" rx="6" fill="#07181e"/>
+    <text x="80" y="105" fill="#62cde2" font-family="Arial, sans-serif" font-size="31" text-anchor="middle">350°</text>
+    <circle cx="165" cy="93" r="21" fill="#414c50" stroke="#778286" stroke-width="3"/>
+    <circle cx="53" cy="165" r="14" fill="#505a5e"/>
+    <circle cx="103" cy="165" r="14" fill="#505a5e"/>
+    <path d="M180 41C215 8 243 3 273 24" fill="none" stroke="#151c20" stroke-width="18" stroke-linecap="round"/>
+    <path d="m248 18 68 72" stroke="#343d41" stroke-width="20" stroke-linecap="round"/>
+    <path d="m311 82 35 35" stroke="#b7b0a2" stroke-width="12" stroke-linecap="round"/>
+    <path d="m341 112 22 22" stroke="#f47721" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- PCB -->
+  <g transform="translate(210 465) rotate(-5 240 110)" filter="url(#shadow)">
+    <rect width="500" height="215" rx="12" fill="url(#pcb)" stroke="#8dbaa0" stroke-width="3"/>
+    <g fill="none" stroke="#68aa84" stroke-width="3" opacity=".8">
+      <path d="M15 36h83l27 27h55m-165 75h93l35-35h90m62-69h73l28 28h69M282 150h68l28 29h105"/>
+      <path d="M62 15v36m242-36v52m143 23v70M192 199v-58"/>
+    </g>
+    <g fill="#d2c6a1">
+      <circle cx="36" cy="35" r="5"/><circle cx="108" cy="138" r="5"/><circle cx="304" cy="68" r="5"/><circle cx="376" cy="179" r="5"/><circle cx="447" cy="91" r="5"/>
+    </g>
+    <g fill="#11191b">
+      <rect x="145" y="45" width="86" height="70" rx="5"/>
+      <rect x="294" y="88" width="72" height="50" rx="4"/>
+      <rect x="390" y="40" width="56" height="35" rx="3"/>
+      <rect x="58" y="160" width="86" height="25" rx="3"/>
+    </g>
+    <g stroke="#c5b993" stroke-width="3">
+      <path d="M148 40v-10m14 10v-10m14 10v-10m14 10v-10m14 10v-10m14 10v-10M148 120v10m14-10v10m14-10v10m14-10v10m14-10v10m14-10v10"/>
+      <path d="M289 94h-12m12 13h-12m12 13h-12m12 13h-12m94-39h-12m12 13h-12m12 13h-12m12 13h-12"/>
+    </g>
+    <g fill="#d8d2bc"><circle cx="258" cy="42" r="13"/><circle cx="258" cy="74" r="13"/><circle cx="258" cy="106" r="13"/></g>
+    <g fill="#285167"><rect x="18" y="73" width="42" height="22" rx="3"/><rect x="18" y="102" width="42" height="22" rx="3"/></g>
+  </g>
+
+  <!-- probes and tools -->
+  <g transform="translate(28 628) rotate(-8)">
+    <rect x="0" y="0" width="220" height="22" rx="11" fill="#d6502f"/>
+    <path d="M210 11h82" stroke="#bfc6c4" stroke-width="6"/>
+    <rect x="20" y="38" width="200" height="22" rx="11" fill="#2b6c8a"/>
+    <path d="M210 49h82" stroke="#bfc6c4" stroke-width="6"/>
+  </g>
+  <g transform="translate(38 388) rotate(10)">
+    <rect width="160" height="30" rx="15" fill="#f47721"/>
+    <path d="M150 15h100" stroke="#bbc3c1" stroke-width="10" stroke-linecap="round"/>
+    <path d="M243 15h35" stroke="#5a6264" stroke-width="4"/>
+  </g>
+
+  <ellipse cx="555" cy="733" rx="405" ry="42" fill="#061016" opacity=".38" filter="url(#soft)"/>
+  <path d="M1020 386c-4 58 26 91 40 137s-18 89-6 139" fill="none" stroke="#121a1d" stroke-width="7"/>
+</svg>
