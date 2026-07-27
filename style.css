@@ -9,8 +9,11 @@
   --navy-800: #0e2936;
   --navy-700: #183c4c;
   --blue: #0066cc;
+  --blue-bright: #0080ff;
   --blue-dark: #004499;
   --blue-soft: #e6f2ff;
+  --blue-accent: #1a7fff;
+  --cyan-accent: #00d4ff;
   --ink: #12212a;
   --muted: #64717a;
   --line: #dde2e3;
@@ -22,6 +25,7 @@
   --content-max: 1500px;
   --shadow-sm: 0 10px 30px rgba(10, 31, 42, 0.08);
   --shadow-lg: 0 30px 70px rgba(4, 18, 27, 0.16);
+  --shadow-blue: 0 8px 24px rgba(0, 102, 204, 0.15);
   --radius-sm: 10px;
   --radius-md: 18px;
   --radius-lg: 26px;
@@ -476,13 +480,16 @@ section[data-section] {
 
 .button--primary {
   color: #fff;
-  background: var(--blue-dark);
-  box-shadow: 0 10px 22px rgba(217, 92, 11, 0.2);
+  background: var(--blue-bright);
+  box-shadow: 0 10px 22px rgba(0, 102, 204, 0.25);
+  transition: all 200ms ease;
+  font-weight: 600;
 }
 
 .button--primary:hover {
-  background: #c85108;
-  box-shadow: 0 13px 28px rgba(217, 92, 11, 0.27);
+  background: var(--blue-accent);
+  box-shadow: 0 15px 35px rgba(0, 102, 204, 0.35);
+  transform: translateY(-2px);
 }
 
 .button--outline {
