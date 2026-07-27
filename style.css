@@ -402,7 +402,7 @@ section[data-section] {
   margin: 0 0 3px;
   color: var(--navy-900);
   font-size: clamp(74px, 8vw, 126px);
-  font-weight: 760;
+  font-weight: 650;
   letter-spacing: -0.065em;
   line-height: 0.92;
 }
@@ -425,10 +425,12 @@ section[data-section] {
 }
 
 .short-rule {
-  width: 44px;
-  height: 2px;
+  width: 60px;
+  height: 3px;
   margin: 25px 0 20px;
-  background: var(--blue);
+  background: linear-gradient(90deg, var(--blue-bright) 0%, var(--blue) 50%, var(--blue-dark) 100%);
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
 }
 
 .hero__text {
