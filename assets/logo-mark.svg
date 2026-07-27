@@ -1,73 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VIGAT mikroschemos ženklas">
   <defs>
-    <!-- Gradients for depth -->
     <linearGradient id="chipGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#004499;stop-opacity:1" />
     </linearGradient>
-    
-    <linearGradient id="innerChipGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#e6f2ff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#b3d9ff;stop-opacity:1" />
-    </linearGradient>
-    
-    <!-- Glow filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <!-- Shadow for depth -->
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.3"/>
-    </filter>
   </defs>
   
   <!-- Main chip body with gradient -->
-  <rect x="18" y="14" width="28" height="36" rx="2.5" fill="url(#chipGradient)" filter="url(#shadow)"/>
+  <rect x="18" y="14" width="28" height="36" rx="3" fill="url(#chipGradient)"/>
   
-  <!-- Inner chip detail -->
-  <rect x="24" y="21" width="16" height="22" rx="1.5" fill="url(#innerChipGradient)" opacity="0.6"/>
+  <!-- Inner detail -->
+  <rect x="24" y="21" width="16" height="22" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
   
-  <!-- Vertical connection pins with glow effect -->
-  <g stroke="#0066cc" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
-    <!-- Top pins -->
-    <path d="M23 6v8"/>
-    <path d="M32 6v8"/>
-    <path d="M41 6v8"/>
-    
-    <!-- Bottom pins -->
-    <path d="M23 50v8"/>
-    <path d="M32 50v8"/>
-    <path d="M41 50v8"/>
-  </g>
+  <!-- Top vertical pins -->
+  <line x1="23" y1="6" x2="23" y2="14" stroke="#0066cc" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="6" x2="32" y2="14" stroke="#0066cc" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="41" y1="6" x2="41" y2="14" stroke="#0066cc" stroke-width="2.5" stroke-linecap="round"/>
   
-  <!-- Left connection lines -->
-  <g stroke="#004499" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
-    <path d="M10 21h8"/>
-    <path d="M10 30h8"/>
-    <path d="M10 39h8"/>
-  </g>
+  <!-- Bottom vertical pins -->
+  <line x1="23" y1="50" x2="23" y2="58" stroke="#004499" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="50" x2="32" y2="58" stroke="#004499" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="41" y1="50" x2="41" y2="58" stroke="#004499" stroke-width="2.5" stroke-linecap="round"/>
   
-  <!-- Right connection lines -->
-  <g stroke="#0066cc" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
-    <path d="M46 21h8"/>
-    <path d="M46 30h8"/>
-    <path d="M46 39h8"/>
-  </g>
+  <!-- Left horizontal pins -->
+  <line x1="10" y1="21" x2="18" y2="21" stroke="#004499" stroke-width="2" stroke-linecap="round"/>
+  <line x1="10" y1="30" x2="18" y2="30" stroke="#004499" stroke-width="2" stroke-linecap="round"/>
+  <line x1="10" y1="39" x2="18" y2="39" stroke="#004499" stroke-width="2" stroke-linecap="round"/>
   
-  <!-- Accent dots with gradient -->
-  <circle cx="10" cy="21" r="2.2" fill="#0066cc" filter="url(#glow)"/>
-  <circle cx="54" cy="39" r="2.2" fill="#004499" opacity="0.9"/>
+  <!-- Right horizontal pins -->
+  <line x1="46" y1="21" x2="54" y2="21" stroke="#0066cc" stroke-width="2" stroke-linecap="round"/>
+  <line x1="46" y1="30" x2="54" y2="30" stroke="#0066cc" stroke-width="2" stroke-linecap="round"/>
+  <line x1="46" y1="39" x2="54" y2="39" stroke="#0066cc" stroke-width="2" stroke-linecap="round"/>
   
-  <!-- Additional accent elements for wow factor -->
-  <g stroke="#0066cc" stroke-width="1.2" fill="none" opacity="0.5">
-    <circle cx="32" cy="32" r="8" stroke-dasharray="3,2"/>
-  </g>
-  
-  <!-- Corner highlights for 3D effect -->
-  <rect x="18" y="14" width="28" height="36" rx="2.5" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+  <!-- Connection dots -->
+  <circle cx="10" cy="21" r="2.5" fill="#0066cc"/>
+  <circle cx="54" cy="39" r="2.5" fill="#004499"/>
+  <circle cx="10" cy="30" r="1.5" fill="#0066cc" opacity="0.6"/>
+  <circle cx="10" cy="39" r="1.5" fill="#0066cc" opacity="0.6"/>
 </svg>
