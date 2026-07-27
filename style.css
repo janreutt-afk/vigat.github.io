@@ -8,9 +8,9 @@
   --navy-850: #0a202c;
   --navy-800: #0e2936;
   --navy-700: #183c4c;
-  --orange: #f47721;
-  --orange-dark: #d95c0b;
-  --orange-soft: #fff1e6;
+  --blue: #0066cc;
+  --blue-dark: #004499;
+  --blue-soft: #e6f2ff;
   --ink: #12212a;
   --muted: #64717a;
   --line: #dde2e3;
@@ -88,7 +88,7 @@ button {
   left: 14px;
   padding: 11px 16px;
   color: #fff;
-  background: var(--orange-dark);
+  background: var(--blue-dark);
   border-radius: 7px;
   font-weight: 700;
   text-decoration: none;
@@ -160,7 +160,7 @@ button {
   bottom: -13px;
   left: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--orange) 0 72%, transparent 72%);
+  background: linear-gradient(90deg, var(--blue) 0 72%, transparent 72%);
   content: "";
 }
 
@@ -218,11 +218,11 @@ button {
 }
 
 .nav-link.is-active {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .nav-link.is-active::before {
-  background: var(--orange);
+  background: var(--blue);
 }
 
 .experience-seal {
@@ -241,7 +241,7 @@ button {
   top: 36px;
   width: 22px;
   height: 65px;
-  border-left: 1px solid var(--orange);
+  border-left: 1px solid var(--blue);
   border-radius: 50%;
   content: "";
 }
@@ -321,7 +321,7 @@ section[data-section] {
   display: inline-block;
   width: 24px;
   height: 2px;
-  background: var(--orange);
+  background: var(--blue);
 }
 
 .section-heading {
@@ -403,7 +403,7 @@ section[data-section] {
 
 .hero__accent {
   margin: 7px 0 0;
-  color: var(--orange-dark);
+  color: var(--blue-dark);
   font-size: clamp(18px, 1.7vw, 25px);
   font-weight: 660;
 }
@@ -412,7 +412,7 @@ section[data-section] {
   width: 44px;
   height: 2px;
   margin: 25px 0 20px;
-  background: var(--orange);
+  background: var(--blue);
 }
 
 .hero__text {
@@ -464,7 +464,7 @@ section[data-section] {
 
 .button--primary {
   color: #fff;
-  background: var(--orange-dark);
+  background: var(--blue-dark);
   box-shadow: 0 10px 22px rgba(217, 92, 11, 0.2);
 }
 
@@ -480,8 +480,8 @@ section[data-section] {
 }
 
 .button--outline:hover {
-  border-color: var(--orange);
-  background: var(--orange-soft);
+  border-color: var(--blue);
+  background: var(--blue-soft);
 }
 
 .text-link {
@@ -497,7 +497,7 @@ section[data-section] {
   bottom: -4px;
   left: 0;
   height: 1px;
-  background: var(--orange);
+  background: var(--blue);
   content: "";
   transform: scaleX(0.36);
   transform-origin: left;
@@ -528,7 +528,7 @@ section[data-section] {
   width: 18px;
   height: 18px;
   fill: none;
-  stroke: var(--orange-dark);
+  stroke: var(--blue-dark);
   stroke-width: 1.8;
 }
 
@@ -580,7 +580,7 @@ section[data-section] {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--blue);
 }
 
 .about {
@@ -633,7 +633,7 @@ section[data-section] {
   gap: 16px;
   margin-top: 33px;
   padding: 20px 21px;
-  border-left: 3px solid var(--orange);
+  border-left: 3px solid var(--blue);
   background: var(--paper-cool);
 }
 
@@ -643,7 +643,7 @@ section[data-section] {
   flex: 0 0 auto;
   margin-top: 2px;
   fill: none;
-  stroke: var(--orange-dark);
+  stroke: var(--blue-dark);
   stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -695,7 +695,7 @@ section[data-section] {
   height: 34px;
   margin-bottom: 17px;
   fill: none;
-  stroke: var(--orange-dark);
+  stroke: var(--blue-dark);
   stroke-width: 1.6;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -704,7 +704,7 @@ section[data-section] {
 .value-card__number {
   display: block;
   margin-bottom: 5px;
-  color: var(--orange);
+  color: var(--blue);
   font-size: 58px;
   font-weight: 720;
   line-height: 0.95;
@@ -765,7 +765,7 @@ section[data-section] {
   left: 27px;
   width: 34px;
   height: 3px;
-  background: var(--orange);
+  background: var(--blue);
   content: "";
   transition: width 180ms ease;
 }
@@ -842,7 +842,7 @@ section[data-section] {
   height: 30px;
   flex: 0 0 auto;
   fill: none;
-  stroke: var(--orange-dark);
+  stroke: var(--blue-dark);
   stroke-width: 1.6;
 }
 
@@ -871,7 +871,7 @@ section[data-section] {
   width: 17px;
   height: 17px;
   fill: none;
-  stroke: var(--orange-dark);
+  stroke: var(--blue-dark);
   stroke-width: 2;
 }
 
@@ -929,7 +929,7 @@ section[data-section] {
   gap: 3px;
   margin-top: 34px;
   padding: 20px 0 20px 20px;
-  border-left: 2px solid var(--orange);
+  border-left: 2px solid var(--blue);
 }
 
 .equipment__statement span {
@@ -973,7 +973,7 @@ section[data-section] {
   left: 0;
   width: 45px;
   height: 2px;
-  background: var(--orange);
+  background: var(--blue);
 }
 
 .equipment-card > svg {
@@ -981,7 +981,7 @@ section[data-section] {
   height: 34px;
   margin-bottom: 20px;
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--blue);
   stroke-width: 1.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -1092,7 +1092,7 @@ section[data-section] {
 
 .map-placeholder.is-highlighted,
 .map-placeholder:focus-visible {
-  border-color: var(--orange);
+  border-color: var(--blue);
   box-shadow: 0 0 0 6px rgba(244, 119, 33, 0.12);
 }
 
@@ -1136,7 +1136,7 @@ section[data-section] {
   width: 31px;
   height: 31px;
   fill: none;
-  stroke: var(--orange);
+  stroke: var(--blue);
   stroke-width: 1.8;
 }
 
@@ -1156,7 +1156,7 @@ section[data-section] {
 }
 
 .map-placeholder__label span {
-  color: var(--orange-dark);
+  color: var(--blue-dark);
   font-size: 10px;
   font-weight: 750;
   letter-spacing: 0.1em;
@@ -1208,7 +1208,7 @@ footer > a {
 }
 
 footer > a:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 @media (max-width: 1250px) {
